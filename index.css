@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Aref Ruqaa, serif';
+}
+::-webkit-scrollbar{
+    width: 10px;
+   
+}
+::-webkit-scrollbar-track{
+    background-color: #dddddd;
+}
+::-webkit-scrollbar-thumb{
+    background: #000;
+    border-radius: 5px;
+}
+img{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#navbar{
+    height: 103px;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+#menu-section{
+    width: 301px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin-right: 400px;
+}
+#menu-section a{
+    text-decoration: none;
+    color: #000;
+}
+#account-section{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    justify-items: center;
+}
+#account-section h2{
+    font-size: 16px;
+    font-weight: 700;
+}
+.value{
+    border-left: 0.5px solid gray;
+    height: 31px;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 58px;
+    padding-top: 1px;
+}
+#bucket{
+    background-image: url(https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg);
+    height:40px;
+    width: 40px;
+}
+#rupee{
+    color: black;
+    margin-top: 8px;
+}
+#no-of-items{
+    padding-left: 20px;
+    color: black;
+}
+#sign-in{
+    padding-right: 29px;
+    
+}
+#sign-in a{
+    color: #000;
+    font-weight: bold;
+}
+#start-order{
+    display: flex;
+    height: 68px;
+    background: #202124;
+}
+.head-bottom-parent{
+    display: flex;
+    margin: 0.9% auto;
+}
+#start-order .head-bottom-parent .header-bottom{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: auto 14px auto auto;
+    font-family: "National 2 Condensed";
+}
+#start-order .head-bottom-parent .red-btn{ 
+    font-weight: 500; 
+    font-size: 16px;
+    padding: 11px 40px;
+    border-radius: 200px;
+    height: 44px;
+    text-align: center;
+    align-items: center;
+    flex-direction:row;
+    font-style: normal;
+    line-height: 24px;
+    cursor: pointer;
+    font-family: "National 2 Condensed";
+    background: #e4002b;
+    color: #fff;
+}
