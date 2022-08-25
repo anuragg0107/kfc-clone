@@ -82,6 +82,9 @@ li>label>span {
     margin-top: -18px;
     color: rgba(0, 0, 0, 0.718);
 }
+#arrow {
+    transform: rotate(270deg);
+}
 ul input[type="checkbox"] {
 
      display: none;
@@ -163,16 +166,19 @@ ul label + input[type="checkbox"]:checked + .firstc {
 }
 #items {
     width: 100%;
-    height: auto;
+    height: 110px;
     padding: 2%;
     background-color:  #f8f7f5;
     border-radius: 8px;
     display: grid;
-    grid-template-columns: 17% 50% 10% 10%;
+    grid-template-columns: 17% 50% 14% 10%;
     justify-content: space-between;
     align-items: center;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 20px;
 }
-#part2a {
+#part2 {
     display: grid;
     grid-template-columns: 66% 28%;
     justify-content: space-between;
@@ -186,4 +192,131 @@ ul label + input[type="checkbox"]:checked + .firstc {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+#items>div:nth-child(3){
+    display: grid;
+    height: 40px;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    
+}
+#items>div:nth-child(3)>div {
+    padding-top: 8px;
+    font-size: 19px;
+}
+.change {
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.change:hover {
+    background-color: black;
+    color: white;
+}
+
+
+#subtotal {
+    border-radius: 7px;
+    box-shadow: 2px 5px 28px 0px #b1b0b0;
+    padding: 10%;
+    font-size: 16px;
+}
+#subtotal h3 {
+    font-size: 24px;
+}
+#div1 {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 10% 60% 23%;
+    justify-content: space-around;
+    height: 45px;
+    background-color: #f8f7f5;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 14px;
+}
+#div1>div:first-child {
+    color: red;
+    border: 2px solid red;
+    border-radius: 50%;
+    height: 21px;
+    padding-top: 3px;
+}
+#div1>div:nth-child(2){
+    color: red;
+}
+#div1>div:nth-child(3){
+    border: 2px solid black;
+    padding: 4px;
+    border-radius: 20px;
+}
+#div1>div:nth-child(3):hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+#div2 {
+    display: grid;
+    grid-template-columns: 70% 25%;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.7;
+}
+#div2:nth-child(5){
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.344);
+}
+#div5 {
+    display: grid;
+    grid-template-columns: 14% 67% 18%;
+    justify-content: space-around;
+    text-align: left;
+    border: 1px solid  rgba(0, 0, 0, 0.215);
+    margin-top: 25px;
+    padding: 5%;
+    font-size: 14px;
+    border-radius: 5px;
+}
+#div5 h3 {
+    font-size: 16px;
+    line-height: 22px;
+}
+#div5 img {
+    width: 100%;
+    padding-left: -10px;
+}
+#div5 p {
+    margin-top: 10px;
+    font-size: 14.5px;
+    font-weight: 500;
+    line-height: 23px;
+}
+#div5 input {
+    margin-top: 40px;
+    cursor: pointer;
+}
+#div6 {
+    margin-top: 20px;
+    height: 45px;
+    background-color: red;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#div6 p{
+    width: 50%;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: right;
+    padding-left: 30px;
 }
