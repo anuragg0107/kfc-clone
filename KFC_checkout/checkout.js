@@ -6,6 +6,12 @@ document.querySelector("#login").addEventListener("click", loginPage);
 function loginPage() {
     window.location.href = "login.html"
 }
+
+let load=document.getElementById("preload")
+window.addEventListener("load",function(){
+    load.style.display="none"
+})
+
 // data
 
 let cartarray = JSON.parse(localStorage.getItem("cartdata")) || [];
