@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECKOUT</title>
+    <link rel="stylesheet" href="./style/checkout.css">
+    <link rel="icon" href="https://online.kfc.co.in/favicon.ico">
+    <link rel="stylesheet" href="./style/index.css">
+
+
+    <script src="https://kit.fontawesome.com/2af41ecea6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div id="preload"></div>
+
+    <div id="navbar1">
+        <button id="gobackmenu" onclick="backtomenu()">Back to Menu</button>
+        <a href="index.html"><img src="images\Nav KFC.jpg" alt="KFC"></a>
+        <button id="login" onclick="loginPage()"><i class="far fa-user-circle fa-2x"></i></button>
+    </div>
+    <div id="locbar1"><span style="color: red;"><i class="fas fa-map-marker-alt"></i></span> 
+        Start an order for Pickup Delivery</div>
+    </div>
+    <img class="threelines" src="images\KFC navlines.jpg">
+    <h1>CHECKOUT</h1>
+    <div id="container1">
+        <div class="box1">
+            <div>
+                <div>Contact Info</div>
+                <div>
+                    <form id="userinfo">
+                        <input type="text" placeholder="First Name">
+                        <hr>
+                        <input type="text" placeholder="Last Name">
+                        <hr>
+                        <input type="email" placeholder="Email">
+                        <hr>
+
+                        <input type="tel" placeholder="Phone No.">
+                        <hr>
+                    </form>
+                    <br>
+                    <p>by provideing my contact information i concent to call/or text from KFC
+                        and/or third
+                        partydelivery providers related to my orders, if applicable</p>
+                </div>
+            </div>
+            <div id="Paymentdiv">
+                <div>Payment</div>
+                <div id="payment">
+                    <div>
+                        <input type="radio">
+                        <img src="images\google-pay-mobile-payment.png" alt="">
+                        <p>Google pay</p>
+
+                    </div>
+                    <div>
+                        <div style="display: flex;">
+                        </div>
+                        <form id="paymentinfo">
+                            <input type="text" placeholder="Nickname(Optional)">
+                            <hr>
+                            <input id="nameoncard" type="text" placeholder="Name on Card">
+                            <hr>
+                            <input id="card" type="number" placeholder="Card Number">
+                            <hr>
+                            <div style="display: flex;">
+                                <input id="exp" type="text"
+                                    placeholder="Exp Date">
+                                <input id="cvv" type="number"
+                                    placeholder="CVV">
+                            </div>
+                            <hr>
+                            <input type="number" placeholder="Billing Zip Code">
+                            <hr>
+                            <!-- <br> -->
+                            <input class="paybutton" type="submit" value="">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box1_2">
+            <h3>Your bag</h3>
+            <br>
+            <hr>
+            <table>
+                <thead>
+                    <tr></tr>
+                </thead>
+                <tbody>
+                    </tr>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td class="subtotal"></td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td class="tax">lmno</td>
+                    </tr>
+                    <tr>
+                        <td>Estimated Total</td>
+                        <td class="estimated">lmno</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+      <div id="footer"></div>
+</body>
+
+</html>
+<script src="./script/checkout.js"> </script>
+<script type="module" >
+    import {navbar,footer} from "../components/navbar.js"
+    let n=document.getElementById("navbar");
+    n.innerHTML=navbar();
+    let f=document.getElementById("footer");
+    f.innerHTML=footer();
+</script>
+
