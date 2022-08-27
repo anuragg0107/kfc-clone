@@ -2,7 +2,7 @@
 *{
         margin: 0;
         padding: 0;
-        /* box-sizing: border-box; */
+        box-sizing:unset;
         font-family: 'Aref Ruqaa', serif;
         font-family: 'Inter', sans-serif;
         font-family: 'Oswald', sans-serif;
@@ -185,6 +185,7 @@ ul label + input[type="checkbox"]:checked + .firstc {
     font-weight: 600;
     font-size: 17px;
     margin-top: 20px;
+    color: black;
 }
 #part2 {
     display: grid;
@@ -200,6 +201,7 @@ ul label + input[type="checkbox"]:checked + .firstc {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 #items>div:nth-child(3){
     display: grid;
@@ -223,7 +225,9 @@ ul label + input[type="checkbox"]:checked + .firstc {
     background-color: black;
     color: white;
 }
-
+#items h3,#items p {
+    color: black;
+}
 
 #subtotal {
     border-radius: 7px;
@@ -303,6 +307,7 @@ ul label + input[type="checkbox"]:checked + .firstc {
     padding-left: -10px;
 }
 #div5 p {
+    color: black;
     margin-top: 10px;
     font-size: 14.5px;
     font-weight: 500;
@@ -447,6 +452,7 @@ body {
     margin-bottom: 10px;
 }
 #offer2 p, #offer4 p {
+    color: black;
     font-size: 13px;
     margin-bottom: 5px;
 }
@@ -470,8 +476,10 @@ body {
     font-size: 15px;
     background-color: rgba(128, 128, 128, 0.186);
     cursor: pointer;
+    color: black;
 }
 #offer4 div:last-child{
+    color: black;
     width: 80%;
     border: 1px solid black;
     padding: 14px;
@@ -487,12 +495,13 @@ body {
     font-size: 14px;
 }
 #offer3 p {
+    color: black;
     margin-top: 10px;
     font-size: 14px;
     font-weight: 600;
     text-decoration: underline;
 }
-.part3{
+#recomend{
     width: 101%;
     height: 450px;
     margin-left: -10%;
@@ -511,14 +520,17 @@ body {
     justify-content: center;
 }
 #part3>div {
-   height: 110px;
+   height: 120px;
    background-size: cover;
    border-radius: 8px;
    padding-top: 100px;
    padding-left: 14px;
 }
-.part3>.part3b {
-    width: 118%;
+#recomend p {
+    color: black;
+}
+#recomend>.part3b {
+    width: 117%;
     background-color: rgb(123, 122, 122);
     height: 2px;
     margin-left: -9%;
@@ -534,4 +546,8 @@ body {
     padding-left: 25px;
     font-weight: 600;
     cursor: pointer;
+    margin-top: 10px;
+}
+#footer {
+    width: 92%;
 }

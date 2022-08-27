@@ -186,14 +186,14 @@ function removeallfunc(){
     let arr = JSON.parse(localStorage.getItem("product_data"))||[];
     console.log(arr.length)
     append1(arr);
-    // window.reload()
     let cont2 = document.querySelector(".part3");
     cont2.innerHTML="";
+     window.location.reload()
 }
 
                                     //checkout function to enter checkout page
 function checkoutfunc(x){
-    localStorage.setItem("subtotal",JSON.stringify(x.toFixed(2)));
+    localStorage.setItem("cartdata",JSON.stringify(x.toFixed(2)));
     window.location.assign("checkout.html");
 
 }
@@ -502,6 +502,7 @@ function append3(){
     let arr2=JSON.parse(localStorage.getItem("recommend"))||[];
     let cont2 = document.querySelector(".part3");
     cont2.innerHTML="";
+    cont2.id="recomend"
     let diva = document.createElement("div");
     diva.id="part3"
     arr2.forEach((el,i) => {
