@@ -201,7 +201,7 @@ function checkoutfunc(x){
                                     //donate 5 ruppees function 
 function donatefunc(x,checkout,p2){
     if(x.checked==true){
-        checkout = checkout-5;
+        checkout = checkout+5;
         p2.innerText=`Rs ${checkout.toFixed(2)}/-`
     }else {
         p2.innerText=`Rs ${checkout.toFixed(2)}/-`
