@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC</title>
+    <link rel="stylesheet" href="./style/signup.css">
+    <link rel="icon" href="https://online.kfc.co.in/favicon.ico">
+</head>
+<body>
+
+    <h4 id="signIn">Sign In/ Sign up</h4>
+    <img id="image" src="https://login.kfc.co.in/auth/resources/1vkce/login/kfcIndiaLoginUIDev_2021_10_27_16_49/images/KFC_logo.svg" alt="">
+    <h4 id="sentence">LET’S SIGN IN OR CREATE ACCOUNT WITH YOUR <br>PHONE NUMBER!</h4>
+     <input type="tel" id="phone" placeholder="Phone Number*" >
+     <p id="para">By “logging in to KFC”, you agree to our <b>Privacy Policy</b> and <b>Terms & Conditions</b>.</p>
+     <button id="btn" onClick="getData()"><a id="anchor1" href="login.html">Send Me a Code</a></button>
+     <p class="or">Or</p>
+     <input class="sub" type="submit" value="Skip, Continue As Guest" >
+
+</body>
+</html>
+<script>
+    function getData(){
+        console.log("signup successfull!")
+
+        let number = document.getElementById("phone").value
+
+        localStorage.setItem("data",JSON.stringify(number))
+
+        
+    }
+</script>

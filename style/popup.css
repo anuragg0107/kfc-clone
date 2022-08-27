@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Aref Ruqaa', serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#sign{
+    text-align: center;
+    margin-top:70px;
+    margin-right:10px;
+    color: #4c5258;
+}
+#welcome{
+    text-align: center;
+    font-weight: bold;
+}
+#thank{
+    text-align: center;
+    font-weight: bold;
+    margin-top:-10px;
+}
+#please{
+    text-align: center;
+    color:#929394;
+    margin-top: 10px;
+}
+.input{
+    margin-left:400px;
+    margin-top:30px;
+    border:none;
+    border-bottom: 1px solid black;
+    width:500px;
+    cursor:pointer;
+    font-size:19px;
+}
+#submit{
+    padding:10px 40px 10px 40px;
+    margin-top:30px;
+    margin-left:580px;
+    border-radius: 18px;
+    background-color: black;
+    color:white;
+    border:none;
+    cursor:pointer;
+
+}
+
+#or{
+    text-align: center;
+    margin-top:30px;
+    margin-left:8px;
+    color:#929394;
+}
+
+#ask{
+    padding:10px 130px 10px 130px;
+    margin-left:400px;
+    border-radius:20px;
+    font-weight:bold;
+    width:500px;
+    margin-top:15px;
+    background-color: white;
+
+}
+#skip{
+    text-decoration: none;
+    color:black;
+}
+#popupAnchor{
+    text-decoration: none;
+    color:white;
+}
