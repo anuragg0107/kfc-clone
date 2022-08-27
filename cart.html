@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC cart</title>
+    <link rel="stylesheet" href="styles/cart.css">
+    <link rel="icon" href="https://online.kfc.co.in/favicon.ico">
+    <!-- <link href="//db.onlinewebfonts.com/c/4e9403b0d7cf02d4dcb241cce29856d2?family=National+2+Condensed" rel="stylesheet" type="text/css"/> -->
+</head>
+<body>
+    <div id="preload"></div>
+    <div class="container">
+    </div>
+    <div id="offer">
+        <!-- coupon code applied page -->
+     </div>
+  
+    <div id="blackline">
+        LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN
+        <button><a href="#">Start Order</a></button>
+     </div>
+  
+    <div id="cart_container">
+
+         <div id="part1">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAeCAYAAAB5c901AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c9BDQAgAMPAgQ4c4F8KDvABFuBHSe+9LGmZ6SsXWkY52b3yW/M5A+kMpDOQzkA6A+kMpDOQzkA6A+kMpDOQzkA6A+kMpNu9MQhKmC+cDgAAAABJRU5ErkJggg==" alt="img">
+            <h1>MY CART</h1>
+         </div>
+
+         <!-- The main cart items visable section which need to append in #part2 -->
+         <div id="part2">
+           
+            <!-- there are two sections in part2 -->
+               <div id="part2a">
+                  <!-- part2a is to append cart items -->
+               </div>
+              
+                <div id="part2b">
+                    <!-- part2b is to show the subtotal and qty -->
+                </div>
+         </div>
+
+
+         <!-- the popular addons on cart which are not visable when there are no items in cart -->
+         <div class="part3">
+
+         </div>
+        
+         <!-- the FAQ question section -->
+         <div id="part4">
+            <div class="faq">
+                <h2>FAQ</h2>
+             <ul>
+               
+                <li>
+                    <label for="first" >
+                        <p>How can I change the information for my credit/debit card or select a different default payment method?</p>
+                        <span>&#x3e;</span>
+                    </label>
+                    <input type="checkbox" id="first">
+                    <div class="firstc">
+                        <p>
+                            Absolutely! After selecting the location from which you’d like to order, you will see the menu screen,
+                             right below the red KFC banner you can select ASAP or select a different date and time. You can also
+                              change the pickup or delivery date and time during the order review screen if you change your mind.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <label for="first1" >
+                        <p>What to expect for delivery?</p>
+                        <span>&#x3e;</span>
+                    </label>
+                    <input type="checkbox" id="first1">
+                    <div class="firstc">
+                        <p>
+                            Absolutely! After selecting the location from which you’d like to order, you will see the menu screen,
+                             right below the red KFC banner you can select ASAP or select a different date and time. You can also change
+                              the pickup or delivery date and time during the order review screen if you change your mind.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <label for="first2" >
+                        <p>How do I change or cancel my pickup order once I’ve placed my order?</p>
+                        <span>&#x3e;</span>
+                    </label>
+                    <input type="checkbox" id="first2">
+                    <div class="firstc">
+                        <p>
+                            Absolutely! After selecting the location from which you’d like to order, you will see the menu screen,
+                             right below the red KFC banner you can select ASAP or select a different date and time. You can also change
+                              the pickup or delivery date and time during the order review screen if you change your mind.
+                        </p>
+                    </div>
+                </li>
+             </ul>
+             <button>View All FAQs</button>
+            </div>
+            <div class="support">
+                 <h2>STILL HAVE A QUESTION?</h2>
+
+                 <button>
+                    Call Us
+                 </button><button>
+                    Contact Us
+                 </button>
+            </div>
+         </div>
+    </div>
+   
+</body>
+</html>
+<script src="script/cart.js" type="module"></script>
