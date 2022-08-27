@@ -1,6 +1,6 @@
 document.querySelector("#gobackmenu").addEventListener("click", backtomenu);
 function backtomenu() {
-    window.location.href = "homepage.html"
+    window.location.href = "index.html"
 }
 document.querySelector("#login").addEventListener("click", loginPage);
 function loginPage() {
@@ -14,7 +14,7 @@ window.addEventListener("load",function(){
 
 // data
 
-let cartarray = JSON.parse(localStorage.getItem("cartdata")) || [];
+let cartarray = JSON.parse(localStorage.getItem("product_data")) || [];
 
 let nos = cartarray.length;
 document.querySelector("thead").textContent = `${nos} ITEM`
