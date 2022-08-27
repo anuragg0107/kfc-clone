@@ -136,6 +136,7 @@ function append1(arr){
 }
                                            // quantity plus function
 function plusfunc(showqty,price,p,minus,el){
+    // let arr= JSON.parse(localStorage.getItem("product_data"))||[];
     minus.style.opacity="1";
     minus.style.cursor="pointer"
      let k = showqty.innerText;
@@ -536,4 +537,5 @@ function addcartfunc(x,arr2,i){
     localStorage.setItem("recommend",JSON.stringify(arr2));
     append3(arr);
     append2(arr);
+    window.location.reload();
 }
