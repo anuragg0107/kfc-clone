@@ -19,7 +19,7 @@ body{
     font-size:22px;
 }
 #kfc{
-    margin-left:588px;
+    margin-left:650px;
     margin-top:15px;
 }
 #text{
@@ -38,7 +38,7 @@ body{
     height:20px;
     width:20px;
     display:flex;
-    margin-left:520px;
+    margin-left:550px;
     margin-top:40px;
 }
 
@@ -91,7 +91,7 @@ body{
 }
 
 #confirm{
-    margin-left:580px;
+    margin-left:620px;
     margin-top:10px;
     padding:10px 35px 10px 35px;
     background-color: #dbdbdb;
