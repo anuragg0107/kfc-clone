@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="./style/menu.css">
+   <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+
+    <div id="preload"></div>
+<div id="navbar"></div>
+
+
+    <div id="main">
+
+        <div id=left>
+
+        <h3>KFC MENU</h3>
+            <p onclick="clicked('c1')">Hot Deals</p>
+            <p onclick="clicked('c2')">Chicken Buckets</p>
+            <p onclick="clicked('c3')">Hot Lanuches</p>
+            <p onclick="clicked('c4')">Box Meals</p>
+            <p onclick="clicked('c5')">Burgers</p>
+            <p onclick="clicked('c6')">Biryani Buckets</p>
+            <p onclick="clicked('c7')">Snack</p>
+            <p onclick="clicked('c8')">Bevarages and Desserts</p>
+           
+        </div>
+
+
+    <div id=right>
+        <input type="text" id="input" placeholder="Search our menu">
+        <hr>
+        <br>
+        <br>
+        <br>
+         
+        <div id="c1">
+
+            <h1>Hot Deals</h1> 
+            <div id="container_1">
+            </div>
+
+        </div>
+        
+        <br>
+
+        <div id="c2">
+
+            <h1>Chicken Buckets</h1>
+        <div id="container_2">
+         </div>
+
+        </div>
+        
+        <br>
+        
+        <div id="c3">
+           
+            <h1>Hot Lanuches</h1>
+        <div id="container_3">
+        </div>
+
+        </div>
+        
+        <br>
+        <br>
+
+        <div id="c4">
+            <h1>Box Meals</h1>
+            <div id="container_4">
+            </div>
+        </div>
+        
+        <br>
+        <div id="c5">
+            <h1>Burgers</h1>
+            <div id="container_5">
+            </div>
+        </div>
+        
+        <br>
+        <br>
+        <div id="c6">
+            <h1>Biryani Buckets</h1>
+            <div id="container_6">
+            </div>
+        </div>
+        
+        <br>
+        <br>
+
+        <div id="c7">
+            <h1>Snack</h1>
+            <div id="container_7">
+            </div>
+        </div>
+        
+        <br>
+        <br>
+        <div id="c8">
+            <h1>Bevarages and Desserts</h1>
+            <div id="container_8">
+            </div>
+        </div>
+        
+        <br>
+        <br>
+       </div>
+
+       <div id="footer"></div>
+<!-- </div> -->
+        
+</body>
+</html>
+<script src="./script/menu.js"></script>
+<script src="https://kit.fontawesome.com/087af23b6e.js" crossorigin="anonymous"></script>
+<script type="module" >
+    import {navbar,footer} from "../components/navbar.js"
+    let n=document.getElementById("navbar");
+    n.innerHTML=navbar();
+    let f=document.getElementById("footer");
+    f.innerHTML=footer();
+</script>
