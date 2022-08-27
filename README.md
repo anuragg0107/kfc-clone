@@ -1,5 +1,4 @@
 ### Hi ✋ :smi we are busy-channel-5933
-<br>
 ![Logo](https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg)
 
 # Kfc-Clone
