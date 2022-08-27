@@ -364,6 +364,7 @@ function offerfunc(x){
     div0.id="offer1"
     let p1 = document.createElement("h2");
     p1.innerHTML="❮"
+    p1.style.cursor="pointer";
     let p2 = document.createElement("h2");
     p1.addEventListener("click",function (){
         offerclosefunc(cont)
@@ -371,6 +372,7 @@ function offerfunc(x){
     p2.innerText="OFFERS & DEALS";
     let p3 = document.createElement("h2");
     p3.innerHTML="&#10006;"
+   p3.style.cursor="pointer";
     p3.addEventListener("click",function (){
         offerclosefunc(cont)
     })
