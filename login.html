@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC</title>
+    <link rel="stylesheet" href="./style/login.css">
+    <link rel="icon" href="https://online.kfc.co.in/favicon.ico">
+</head>
+<body>
+
+    <h4 id="signIn">Sign In/ Sign Up</h4>
+    <img id="kfc" src="https://login.kfc.co.in/auth/resources/1vkce/login/kfcIndiaLoginUIDev_2021_10_27_16_49/images/KFC_logo.svg" alt="">
+    <h3 id="text">WE JUST TEXTED YOU</h3>
+    <p id="loginPara">Please enter the verification code we just sent to <b class="number"></b></p>
+    <div class="div">
+        <h3 id="different">Different Number?</h3>
+    </div>
+ 
+    
+
+    <div id="otp" class="">
+        <input class="text-center form-control" type="text" id="digit-1" name="digit-1" data-next="digit-2" maxlength="1" />
+        <input class="text-center form-control" type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" maxlength="1" />
+        <input class="text-center form-control" type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" maxlength="1" />
+        <input class="text-center form-control" type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" maxlength="1" />
+       
+    </div>
+    <p class="timer"><b class="timer1"></b></p>
+    <button type="submit" id="confirm"> Submit </button>
+
+
+
+</body>
+</html>
+<script>
+    let loginData = JSON.parse(localStorage.getItem("data"))
+    document.querySelector(".number").innerText = loginData
+
+    document.querySelector("#confirm").addEventListener("click",press)
+    function press(){
+        window.location.href = "popup.html"
+    }
+    
+
+    let p = document.createElement("p")
+    let i = 178
+    setInterval(function(){
+        if(i<0){
+            p.innerText = `Your Code Has Expired`
+            p.style.color = "red"
+        }
+        else{
+            p.innerText = `Your Code will Expire In 0:${i}sec`
+            document.querySelector(".timer1").append(p)
+        }
+        i--
+    },1000)
+    
+    
+</script>
