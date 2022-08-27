@@ -67,7 +67,9 @@ function append1(arr){
                 let img = document.createElement("img");
                 img.src = el.image;
                 div1.append(img);
-    
+                if(el.qty == undefined){
+                    el.qty=1;
+                }
     
                 let head = document.createElement("p");
                 head.innerText= el.name;
@@ -82,7 +84,7 @@ function append1(arr){
                 div2.append(head,remove);
     
     
-                let n =el.qty;
+                let n =+el.qty;
                 let price = document.createElement("p");
                 el.price = +(el.price)
                 price.innerText= `Rs ${el.price.toFixed(2)}/-`;
