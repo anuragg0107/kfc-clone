@@ -27,7 +27,7 @@ img{
     justify-content: space-around;
     position: fixed;
     z-index: 7;
-    top: 0;
+     top: 0;
     background-color: white;
   }
   #menu-section{
@@ -43,12 +43,13 @@ img{
     color: #000;
   }
   #account-section{
-    width: 250px;
+    width: 360px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     cursor: pointer;
     justify-items: center;
+    margin-left: 150px;
   }
   #account-section h2{
     font-size: 16px;
@@ -72,8 +73,11 @@ img{
     margin-top: 8px;
   }
   #no-of-items{
-    padding-left: 20px;
+    padding-left: 15px;
+    padding-top: 11px;
     color: black;
+    font-size: 14px;
+    font-weight: 600;
   }
   #sign-in{
     padding-right: 29px;
@@ -85,8 +89,9 @@ img{
   #kfc-logo1{
     margin-right: 100px;
   }
-  #footer>a,p,ul{
+  #footer>a,#footer p,#footer ul,#footer h5{
     color: white;
+    font-size: 14px;
   }
   img,a{
     cursor: pointer;
@@ -117,8 +122,12 @@ img{
     align-items: center;
     margin:auto
   }
-  li{
+  #footer li{
     list-style: none;
+    margin: 0px;
+    padding: 4px;
+    color: white;
+    border: 0px;
   }
   #allsection{
     display: flex;
@@ -145,7 +154,7 @@ img{
     margin-top: 33px;
     padding-left: 10px;
   }
-  .copyright{
+  #footer #end .copyright h5 {
     margin-top: 46px;
     color: #DBDBDB;
     font-size: 16px;
@@ -467,7 +476,7 @@ ul label + input[type="checkbox"]:checked + .firstc {
     height: 45px;
     background-color: red;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 30% 70%;
     justify-content: space-between;
     align-items: center;
     border-radius: 50px;

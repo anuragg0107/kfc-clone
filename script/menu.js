@@ -694,5 +694,22 @@ let container_8=document.getElementById("container_8");
 
     });
 
-
-
+recomend();
+function recomend(){
+    let arr2 = [
+    {
+        name:"PEPSI PET",image:"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K350.jpg?ver=19.73",
+        qty:1, price:57.14
+    },{
+        name:"POPCORN NACHOS", image:"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K664.jpg?ver=19.73",
+        qty:1, price:169
+    },{
+        name:"CHACO MUD PIE",image:"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K496.jpg?ver=19.73",
+        qty:1, price:128.57
+    },{
+            name:"Wednesday Bucket", image:"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000373.jpg?ver=19.29",
+            qty:2, price:350.48
+        }
+]
+localStorage.setItem("recommend",JSON.stringify(arr2));
+}
