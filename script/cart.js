@@ -69,8 +69,9 @@ function append1(arr){
                 div1.append(img);
                 if(el.qty == undefined){
                     el.qty=1;
+                    localStorage.setItem(("product_data"),JSON.stringify(arr))
                 }
-    
+                console.log(el)
                 let head = document.createElement("p");
                 head.innerText= el.name;
                 let remove = document.createElement("div");
