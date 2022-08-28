@@ -90,8 +90,9 @@ a{
     margin-top: 8px;
 }
 #no-of-items{
-    padding-left: 20px;
+    padding-left: 16px;
     color: black;
+    padding-top:10px;
 }
 #sign-in{
     padding-right: 29px;
