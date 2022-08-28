@@ -13,11 +13,11 @@ I worked on this project during unit-3 construct week at Masai School with the h
 <img width="26px" src="https://camo.githubusercontent.com/442c452cb73752bb1914ce03fce2017056d651a2099696b8594ddf5ccc74825e/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6a6176617363726970742f6a6176617363726970742d6f726967696e616c2e737667" alt="javascript"/>
 
 ## Important Links 🔗 
-<a href="">Deployed Netlify Link</a>
+<a href="https://busy-channel-5933-kfc.netlify.app/">Deployed Netlify Link</a>
 <br>
 <a href="https://github.com/anuragg0107/busy-channel-5933.git">Github Link</a>
 <br>
-<a href="">Project presentation</a>
+<a href="https://drive.google.com/file/d/1-MC99ch5urcRBOrxV5c5sK_vja8_h9t5/view?usp=sharing">Project presentation</a>
 
 ## 👯 Collaborators
 <a href="https://github.com/anuragg0107">Anurag Gupta</a><br>
