@@ -1,6 +1,7 @@
 
 
 let arr = JSON.parse(localStorage.getItem("product_data"))||[];
+// let bucket=JSON.parse(localStorage.getItem("product_data")) || [];
 // let obj = {
 //     name:"Wednesday Bucket", image:"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000373.jpg?ver=19.29",
 //     qty:2, price:350.48
@@ -10,22 +11,7 @@ let arr = JSON.parse(localStorage.getItem("product_data"))||[];
 // localStorage.setItem("product_data",JSON.stringify(arr))
 // let Discount = 0;
 //     localStorage.setItem("coupon",JSON.stringify(Discount));
-// let arr2 = [
-//     {
-//         name:"PEPSI PET",image:"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K350.jpg?ver=19.73",
-//         qty:1, price:57.14
-//     },{
-//         name:"POPCORN NACHOS", image:"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K664.jpg?ver=19.73",
-//         qty:1, price:169
-//     },{
-//         name:"CHACO MUD PIE",image:"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K496.jpg?ver=19.73",
-//         qty:1, price:128.57
-//     },{
-//             name:"Wednesday Bucket", image:"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000373.jpg?ver=19.29",
-//             qty:2, price:350.48
-//         }
-// ]
-// localStorage.setItem("recommend",JSON.stringify(arr2));
+
 append1(arr);
 
                             //   all the cart data appended function
@@ -67,8 +53,19 @@ function append1(arr){
                 let img = document.createElement("img");
                 img.src = el.image;
                 div1.append(img);
-    
-    
+                if(el.qty == undefined){
+                    el.qty=1;
+                    localStorage.setItem(("product_data"),JSON.stringify(arr))
+                }
+                 
+               if(typeof(el.price) != "number"){
+                console.log(el.price, typeof(el.price))
+                let [c,j]= el.price.split(" ");
+                j= +(j);
+                el.price=j;
+                localStorage.setItem(("product_data"),JSON.stringify(arr))
+               }
+                console.log(el)
                 let head = document.createElement("p");
                 head.innerText= el.name;
                 let remove = document.createElement("div");
@@ -82,7 +79,7 @@ function append1(arr){
                 div2.append(head,remove);
     
     
-                let n =el.qty;
+                let n =+el.qty;
                 let price = document.createElement("p");
                 el.price = +(el.price)
                 price.innerText= `Rs ${el.price.toFixed(2)}/-`;
@@ -136,6 +133,7 @@ function append1(arr){
 }
                                            // quantity plus function
 function plusfunc(showqty,price,p,minus,el){
+    // let arr= JSON.parse(localStorage.getItem("product_data"))||[];
     minus.style.opacity="1";
     minus.style.cursor="pointer"
      let k = showqty.innerText;
@@ -186,14 +184,14 @@ function removeallfunc(){
     let arr = JSON.parse(localStorage.getItem("product_data"))||[];
     console.log(arr.length)
     append1(arr);
-    // window.reload()
     let cont2 = document.querySelector(".part3");
     cont2.innerHTML="";
+     window.location.reload()
 }
 
                                     //checkout function to enter checkout page
 function checkoutfunc(x){
-    localStorage.setItem("subtotal",JSON.stringify(x.toFixed(2)));
+    localStorage.setItem("cartdata",JSON.stringify(x.toFixed(2)));
     window.location.assign("checkout.html");
 
 }
@@ -201,7 +199,7 @@ function checkoutfunc(x){
                                     //donate 5 ruppees function 
 function donatefunc(x,checkout,p2){
     if(x.checked==true){
-        checkout = checkout-5;
+        checkout = checkout+5;
         p2.innerText=`Rs ${checkout.toFixed(2)}/-`
     }else {
         p2.innerText=`Rs ${checkout.toFixed(2)}/-`
@@ -223,6 +221,7 @@ function append2(){
         return a+b.qty;
     },0) 
    console.log(total)
+   document.getElementById("no-of-items").innerHTML=total;
     qty.innerText= `${total} ITEM`;
     let div1 = document.createElement("div");
     div1.id = "div1"
@@ -249,6 +248,7 @@ function append2(){
         offerfunc(subtotal.toFixed(2));
     })
 
+    document.getElementById("rupee").innerText=`₹ ${subtotal.toFixed(2)}`;
     let gst = 5 * subtotal /100;
     gst = gst;
     gst = +(gst);
@@ -502,6 +502,7 @@ function append3(){
     let arr2=JSON.parse(localStorage.getItem("recommend"))||[];
     let cont2 = document.querySelector(".part3");
     cont2.innerHTML="";
+    cont2.id="recomend"
     let diva = document.createElement("div");
     diva.id="part3"
     arr2.forEach((el,i) => {
@@ -535,4 +536,5 @@ function addcartfunc(x,arr2,i){
     localStorage.setItem("recommend",JSON.stringify(arr2));
     append3(arr);
     append2(arr);
+    window.location.reload();
 }

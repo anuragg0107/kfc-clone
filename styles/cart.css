@@ -2,7 +2,7 @@
 *{
         margin: 0;
         padding: 0;
-        /* box-sizing: border-box; */
+        box-sizing:unset;
         font-family: 'Aref Ruqaa', serif;
         font-family: 'Inter', sans-serif;
         font-family: 'Oswald', sans-serif;
@@ -11,12 +11,166 @@
     text-decoration: none;
     color: black;
 }
+/* the header and footer part */
+img{
+    cursor: pointer;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  #navbar{
+    height: 103px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 7;
+     top: 0;
+    background-color: white;
+  }
+  #menu-section{
+    width: 301px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin-right: 400px;
+  }
+  #menu-section a{
+    text-decoration: none;
+    color: #000;
+  }
+  #account-section{
+    width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    justify-items: center;
+    margin-left: 150px;
+  }
+  #account-section h2{
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .value{
+    border-left: 0.5px solid gray;
+    height: 31px;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 58px;
+    padding-top: 1px;
+  }
+  #bucket{
+    background-image: url(https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg);
+    height:40px;
+    width: 40px;
+  }
+  #rupee{
+    color: black;
+    margin-top: 8px;
+  }
+  #no-of-items{
+    padding-left: 15px;
+    padding-top: 11px;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  #sign-in{
+    padding-right: 29px;
+  }
+  #sign-in a{
+    color: #000;
+    font-weight: bold;
+  }
+  #kfc-logo1{
+    margin-right: 100px;
+  }
+  #footer>a,#footer p,#footer ul,#footer h5{
+    color: white;
+    font-size: 14px;
+  }
+  img,a{
+    cursor: pointer;
+    text-decoration: none;
+    color:white;
+  }
+  #footer{
+    width:100%;
+    height: 500px;
+    margin:auto;
+    color:white;
+    background-color: rgb(34, 31, 38);
+    padding:50px;
+  }
+  .find{
+    margin-top: -119px;
+    text-decoration: underline;
+  }
+  .play-store{
+    margin-top: -100px;
+  }
+  #offersanddeals{
+    display: flex;
+    height: 100px;
+    width: 70%;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    margin:auto
+  }
+  #footer li{
+    list-style: none;
+    margin: 0px;
+    padding: 4px;
+    color: white;
+    border: 0px;
+  }
+  #allsection{
+    display: flex;
+    justify-content: space-evenly;
+    width:90%;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    line-height: 30px;
+    padding: 100px 0px 100px 0px;
+  }
+  #location{
+    color:red;
+    cursor: pointer;
+  }
+  #end{
+    display: flex;
+    width: 50%;
+    margin:auto;
+    justify-content: space-between;
+  }
+  #social{
+    justify-content: end;
+    margin-top: 33px;
+    padding-left: 10px;
+  }
+  #footer #end .copyright h5 {
+    margin-top: 46px;
+    color: #DBDBDB;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    line-height: 12px;
+  }
 
+
+
+                                           /* ends */
 #blackline {
     height: 50px;
     width: 100%;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 110px;
     background-color: black;
     padding-top: 25px;
     color: white;
@@ -185,6 +339,7 @@ ul label + input[type="checkbox"]:checked + .firstc {
     font-weight: 600;
     font-size: 17px;
     margin-top: 20px;
+    color: black;
 }
 #part2 {
     display: grid;
@@ -200,6 +355,7 @@ ul label + input[type="checkbox"]:checked + .firstc {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 #items>div:nth-child(3){
     display: grid;
@@ -223,7 +379,9 @@ ul label + input[type="checkbox"]:checked + .firstc {
     background-color: black;
     color: white;
 }
-
+#items h3,#items p {
+    color: black;
+}
 
 #subtotal {
     border-radius: 7px;
@@ -303,6 +461,7 @@ ul label + input[type="checkbox"]:checked + .firstc {
     padding-left: -10px;
 }
 #div5 p {
+    color: black;
     margin-top: 10px;
     font-size: 14.5px;
     font-weight: 500;
@@ -317,7 +476,7 @@ ul label + input[type="checkbox"]:checked + .firstc {
     height: 45px;
     background-color: red;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 30% 70%;
     justify-content: space-between;
     align-items: center;
     border-radius: 50px;
@@ -447,6 +606,7 @@ body {
     margin-bottom: 10px;
 }
 #offer2 p, #offer4 p {
+    color: black;
     font-size: 13px;
     margin-bottom: 5px;
 }
@@ -470,8 +630,10 @@ body {
     font-size: 15px;
     background-color: rgba(128, 128, 128, 0.186);
     cursor: pointer;
+    color: black;
 }
 #offer4 div:last-child{
+    color: black;
     width: 80%;
     border: 1px solid black;
     padding: 14px;
@@ -487,12 +649,13 @@ body {
     font-size: 14px;
 }
 #offer3 p {
+    color: black;
     margin-top: 10px;
     font-size: 14px;
     font-weight: 600;
     text-decoration: underline;
 }
-.part3{
+#recomend{
     width: 101%;
     height: 450px;
     margin-left: -10%;
@@ -511,14 +674,17 @@ body {
     justify-content: center;
 }
 #part3>div {
-   height: 110px;
+   height: 120px;
    background-size: cover;
    border-radius: 8px;
    padding-top: 100px;
    padding-left: 14px;
 }
-.part3>.part3b {
-    width: 118%;
+#recomend p {
+    color: black;
+}
+#recomend>.part3b {
+    width: 117%;
     background-color: rgb(123, 122, 122);
     height: 2px;
     margin-left: -9%;
@@ -534,4 +700,12 @@ body {
     padding-left: 25px;
     font-weight: 600;
     cursor: pointer;
+    margin-top: 10px;
 }
+#footer {
+    width: 92%;
+}
+
+
+/* The header and footer code */
+
