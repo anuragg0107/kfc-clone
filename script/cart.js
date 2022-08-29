@@ -57,7 +57,7 @@ function append1(arr){
                     el.qty=1;
                     localStorage.setItem(("product_data"),JSON.stringify(arr))
                 }
-                 
+                 console.log(el.price)
                if(typeof(el.price) != "number"){
                 console.log(el.price, typeof(el.price))
                 let [c,j]= el.price.split(" ");
